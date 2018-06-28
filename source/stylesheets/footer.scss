@@ -1,0 +1,37 @@
+.footer {
+  padding-top: 2em;
+  background-color: $gray-light;
+  color: #FFFFFF;
+
+  a {
+    color: #FFFFFF;
+    &:hover { color: $main-color; }
+  }
+
+  .footer--name {
+    margin-bottom: 0;
+    font-family: 'Rancho', cursive;
+  }
+
+  .footer--sub-name { margin: 0.25em 0; }
+
+  .footer--sm-icons {
+    padding-left: 0.5em;
+    .footer-contact--img { max-height: 48px; }
+  }
+
+  .footer-contact {
+    padding: 1em 0;
+    background-color: $gray-dark;
+  }
+
+  .footer--left {
+    text-align: left;
+  }
+
+  .footer--right {
+    text-align: right;
+    @media screen and(max-width: 415px){ text-align: left; }
+  }
+
+}

@@ -1,0 +1,22 @@
+.return-to-top {
+    width: 100%;
+    position: fixed;
+    bottom: 16px;
+    text-align: center;
+    z-index: 99;
+
+    .return-to-top--img {
+      &:hover {
+         transition: 1.0s;
+        -webkit-transition: 1.0s;
+        -moz-transition: 1.0s;
+        -ms-transition: 1.0s;
+        -o-transition: 1.0s;
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+      } 
+    }
+}

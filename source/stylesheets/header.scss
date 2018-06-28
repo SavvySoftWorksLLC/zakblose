@@ -1,0 +1,17 @@
+.header {
+  .header--img {
+    max-height: 128px;
+    padding-top: 1em;
+  }
+
+  .header--name {
+    margin-bottom: 0;
+    font-family: 'Rancho', cursive;
+  }
+
+  .header--sub-name { margin-top: 0 0 4px 0; }
+
+  .header--contact { text-align: right; }
+
+  color: $main-color;
+}
