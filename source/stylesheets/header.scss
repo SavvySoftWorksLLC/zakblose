@@ -9,9 +9,20 @@
     font-family: 'Rancho', cursive;
   }
 
-  .header--sub-name { margin-top: 0 0 4px 0; }
+  .header--name-small {
+    font-size: 1.5157em;
+  }
+
+  .header--sub-name { margin: 4px 0; }
 
   .header--contact { text-align: right; }
+
+  .header--img-div {
+    text-align: right;
+    @media screen and(max-width: 415px){
+      text-align: left;
+    }
+  }
 
   color: $main-color;
 }
