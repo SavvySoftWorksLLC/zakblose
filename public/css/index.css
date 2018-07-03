@@ -1,0 +1,96 @@
+:root {
+  --main-color: #312B81;
+  --main-color-light: #B7D9E4;
+  --accent-color: #AF7F4E;
+
+  --gray-dark: #6E8898;
+  --gray-light: #9FB1BC;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rancho');
+
+body {
+  font-size: 1.1em;
+  line-height: 1.4em;
+
+  h1 { font-size: 2.0em; }
+  h2 { font-size: 1.7411em; }
+  h3 { font-size: 1.5157em; }
+  h4 { font-size: 1.3195em; }
+  h5 { font-size: 1.1487em; }
+  h6 { font-size: 1.0em; }
+
+}
+
+.jumbotron {
+  margin-bottom: 0rem;
+  text-align: right;
+  height: 100vh;
+  background: url('/images/parallax/1.jpg') center center;
+  background-size: cover;
+  background-color: var(--accent-color);
+  color: var(--main-color-light);
+  box-shadow: inset -4px -8px 16px 4px rgba(175, 127, 78, 0.4);
+
+}
+
+.jumbotron .jumbotron--name {
+  font-family: 'Rancho', cursive;
+  font-size: 3em;
+}
+
+.navbar {
+  background-color: var(--gray-light);
+}
+
+.navbar-brand {
+  color: #FFFFFF;
+}
+
+.nav-link {
+  color: #FFFFFF;
+}
+
+.nav-link:hover {
+  color: var(--main-color);
+}
+
+
+
+.cal {
+  padding: 1em 0;
+
+  background-color: var(--gray-light);
+  /*box-shadow: inset 0px -8px 8px 0px rgba(175, 127, 78, 0.4);*/
+  box-shadow: inset -4px -8px 16px 4px rgba(175, 127, 78, 0.4);
+}
+
+.bookings-link { color: var(--main-color); }
+.bookings-link:hover {
+  color: #FFFFFF;
+  text-shadow: 0 1px 2px var(--main-color);
+}
+
+
+.gallery-title {
+  color: var(--main-color);
+  text-align: center;
+}
+
+.filter-button {
+  margin: 0 0.5em;
+  font-size: 18px;
+  border: 1px solid var(--main-color);
+  border-radius: 8px;
+  text-align: center;
+  color: var(--main-color);
+}
+
+.filter-button:hover
+{
+  background-color: var(--main-color-light);
+}
+
+.gallery_product {
+  margin-bottom: 30px;
+}

@@ -1,0 +1,5 @@
+.jumbotron {
+  background-color: var(--main-color-light);
+  color: #FFFFFF;
+  box-shadow: inset 0px -8px 8px 0px rgba(175, 127, 78, 0.4);
+}
