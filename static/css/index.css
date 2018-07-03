@@ -22,6 +22,34 @@ body {
 
 }
 
+#overlay{
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--gray-dark);
+  opacity: 0.8;
+  z-index:1001;
+}
+
+#overlay-content{ 
+  position: absolute;
+  display: none;
+  z-index:1002;
+  margin: 0 auto;
+  margin: 16px;
+}
+
+.spash-logo {
+  max-width: 480px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
 .jumbotron {
   margin-bottom: 0rem;
   text-align: right;
@@ -37,6 +65,10 @@ body {
 .jumbotron .jumbotron--name {
   font-family: 'Rancho', cursive;
   font-size: 3em;
+}
+
+.jumbo-contact-img {
+  max-height: 40px;
 }
 
 .navbar {
@@ -61,7 +93,6 @@ body {
   padding: 1em 0;
 
   background-color: var(--gray-light);
-  /*box-shadow: inset 0px -8px 8px 0px rgba(175, 127, 78, 0.4);*/
   box-shadow: inset -4px -8px 16px 4px rgba(175, 127, 78, 0.4);
 }
 
@@ -69,4 +100,36 @@ body {
 .bookings-link:hover {
   color: #FFFFFF;
   text-shadow: 0 1px 2px var(--main-color);
+}
+
+.gallery {
+  padding: 2em 0;
+  background-color: var(--gray-light);
+  box-shadow: inset -4px -8px 16px 4px rgba(175, 127, 78, 0.4);
+}
+
+.gallery-image {
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+.icons-container {
+  width: 100%;
+  position: fixed;
+  bottom: 16px;
+  text-align: center;
+  z-index: 99;
+}
+
+.icons-img:hover {
+  transition: 1.0s;
+  -webkit-transition: 1.0s;
+  -moz-transition: 1.0s;
+  -ms-transition: 1.0s;
+  -o-transition: 1.0s;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
