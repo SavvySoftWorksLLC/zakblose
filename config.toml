@@ -2,3 +2,5 @@ staticDir = "static"
 baseURL = ""
 languageCode = "en-us"
 title = "Zak Blose"
+publishDir = "docs"
+
