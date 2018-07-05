@@ -53,9 +53,6 @@ body {
 .garallax {
   height: 72vh !important;
   width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
 }
 
 #garallax_1 {
@@ -102,9 +99,18 @@ body {
   color: #FFFFFF;
 }
 
-.nav-link {
-  color: #FFFFFF;
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.75);
+  border-left: 1px solid rgba(255, 255, 255,0);
+  border-right: 1px solid rgba(255, 255, 255,0);
 }
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+}
+
 
 .nav-link:hover {
   color: var(--main-color);
@@ -121,7 +127,11 @@ body {
   box-shadow: inset -4px -8px 16px 4px rgba(175, 127, 78, 0.4);
 }
 
-.bookings-link { color: var(--main-color); }
+.calendar-title {
+  color: var(--main-color);
+}
+
+.bookings-link { color: #FFFFFF; }
 .bookings-link:hover {
   color: #FFFFFF;
   text-shadow: 0 1px 2px var(--main-color);
@@ -167,6 +177,11 @@ body {
 
 .wearecentralpa-link {
   color: #FFFFFF;
+}
+
+.wearecentralpa-link:hover {
+  color: #FFFFFF;
+  text-shadow: 0 1px 2px var(--main-color);
 }
 
 .wearecentralpa-img {
