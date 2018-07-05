@@ -67,12 +67,8 @@ body {
   font-size: 3em;
 }
 
-.jumbo-sm-icons {
-  text-align: right;
-}
-
 .jumbo-contact-img {
-  max-height: 48px;
+  max-height: 40px;
 }
 
 .navbar {
@@ -115,6 +111,25 @@ body {
 .gallery-image {
   margin-bottom: 1em;
   padding: 0.5em;
+}
+
+.wearecentralpa {
+  background-color: var(--gray-dark);
+  box-shadow: inset -4px -8px 16px 4px rgba(175, 127, 78, 0.4);
+}
+
+.wearecentralpa-row {
+  padding: 2em 0;
+}
+
+.wearecentralpa-link {
+  color: #FFFFFF;
+}
+
+.footer {
+  padding: 2em 0 4em 0;
+  background-color: var(--gray-light);
+  box-shadow: inset -4px -8px 16px 4px rgba(175, 127, 78, 0.4);
 }
 
 .icons-container {

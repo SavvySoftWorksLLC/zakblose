@@ -1,15 +1,21 @@
 <div class="icons-container">
   <div class="icons">
-    <a href="#calendar" class="waves-effect">
+    <a href="#calendar" class="waves-effect" data-toggle="tooltip" data-html="true" title="Calendar">
       <img class="icons-img icons-calendar" src="/images/calendar.svg" alt="Calendar" height="40" />
     </a>
 
-    <a href="#top" class="waves-effect">
+    <a href="#top" class="waves-effect" data-toggle="tooltip" data-html="true" title="Return to top">
       <img class="icons-img icons-return" src="/images/return.svg" alt="Return to top" height="40" />
     </a>
 
-    <a href="#gallery" class="waves-effect">
+    <a href="#gallery" class="waves-effect" data-toggle="tooltip" data-html="true" title="Gallery">
       <img class="icons-img icons-gallery" src="/images/gallery.svg" alt="Gallery" height="40" />
     </a>
   </div>
 </div>
+
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
