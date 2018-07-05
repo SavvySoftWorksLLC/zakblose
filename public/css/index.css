@@ -50,6 +50,29 @@ body {
   transform: translate(-50%, -50%)
 }
 
+.garallax {
+  height: 72vh !important;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#garallax_1 {
+  background: url(../images/parallax/3.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+#garallax_2 {
+  background: url(../images/parallax/2.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+#garallax_3 {
+  background: url(../images/parallax/1.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
 .jumbotron {
   margin-bottom: 0rem;
   text-align: right;
@@ -85,6 +108,10 @@ body {
 
 .nav-link:hover {
   color: var(--main-color);
+}
+
+.navbar-toggler-icon {
+  color: #FFFFFF;
 }
 
 .cal {
