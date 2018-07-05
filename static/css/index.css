@@ -108,7 +108,25 @@ body {
 
 .gallery-image {
   margin-bottom: 1em;
-  padding: 0.5em;
+}
+
+.gallery-title {
+  color: var(--main-color);
+}
+
+.filter-button {
+  border: 1px solid var(--main-color);
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px var(--main-color);
+  text-align: center;
+  color: var(--main-color);
+  margin-bottom: 1em;
+}
+
+.filter-button:hover {
+  border: 1px solid #FFFFFF;
+  background-color: var(--main-color);
+  color: #ffffff;
 }
 
 .wearecentralpa {

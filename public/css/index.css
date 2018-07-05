@@ -87,8 +87,6 @@ body {
   color: var(--main-color);
 }
 
-
-
 .cal {
   padding: 1em 0;
 
@@ -110,7 +108,25 @@ body {
 
 .gallery-image {
   margin-bottom: 1em;
-  padding: 0.5em;
+}
+
+.gallery-title {
+  color: var(--main-color);
+}
+
+.filter-button {
+  border: 1px solid var(--main-color);
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px var(--main-color);
+  text-align: center;
+  color: var(--main-color);
+  margin-bottom: 1em;
+}
+
+.filter-button:hover {
+  border: 1px solid #FFFFFF;
+  background-color: var(--main-color);
+  color: #ffffff;
 }
 
 .wearecentralpa {
@@ -126,10 +142,29 @@ body {
   color: #FFFFFF;
 }
 
+.wearecentralpa-img {
+  max-width: 384px;
+  padding-bottom: 1em;
+}
+
 .footer {
   padding: 2em 0 4em 0;
   background-color: var(--gray-light);
+  color: var(--main-color);
   box-shadow: inset -4px -8px 16px 4px rgba(175, 127, 78, 0.4);
+}
+
+.footer-text-div {
+  padding-bottom: 1em;
+}
+
+.footer-logo-div {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.footer-icon-div {
+  text-align: right;
 }
 
 .icons-container {
@@ -151,4 +186,11 @@ body {
   -o-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
+}
+
+@media screen and (max-width: 415px) {
+  .footer-text-div { text-align: center; }
+  .footer-icon-div {
+    text-align: center;
+  }
 }

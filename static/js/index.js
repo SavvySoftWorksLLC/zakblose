@@ -39,5 +39,17 @@ $(function() {
   setTimeout(function(){    
     $("#overlay").fadeOut( 1600, "linear" )
   }, 500)
+
+  // gallery
+  $(".filter-button").click(function(){
+    var value = $(this).attr('data-filter');
+
+    if(value == "all") {
+      $('.filter').show('1000');
+    } else {
+      $(".filter").not('.'+value).hide('2000');
+      $('.filter').filter('.'+value).show('2000')
+    }
+  })
 })
 
