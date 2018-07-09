@@ -2,10 +2,12 @@ $(function() {
   // jQuery Scroll Animations
   $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'))
-    if( target.length ) {
+    console.log(target)
+    console.log(target.length)
+    if(target.length) {
         event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top
+        $('html, body').animate({
+            scrollTop: target.offset().top - 56
         }, 500)
     }
   })

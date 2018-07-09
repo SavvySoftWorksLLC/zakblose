@@ -1,13 +1,16 @@
 :root {
-  --main-color: #312B81;
-  --main-color-light: #B7D9E4;
+  --main-color-dark: #312B81;
+  --main-color: #B7D9E4;
   --accent-color: #AF7F4E;
+  --nav: #2E0208;
+  --about: #492513;
+  --calendar: #361808;
+  --gallery: #190B08;
+  --footer: #242124;
 
   --gray-dark: #6E8898;
   --gray-light: #9FB1BC;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Rancho');
 
 body {
   font-size: 1.1em;
@@ -53,6 +56,8 @@ body {
 .garallax {
   height: 72vh !important;
   width: 100%;
+  /*box-shadow: inset -4px -8px 16px 4px rgba(175, 127, 78, 0.4), 4px 4px 8px rgba(175, 127, 78, 0.4);*/
+  box-shadow: inset -4px -8px 16px 4px rgba(0,0,0, 0.3), 4px 4px 8px rgba(0,0,0, 0.3);
 }
 
 #garallax_1 {
@@ -66,33 +71,71 @@ body {
 }
 
 #garallax_3 {
-  background: url(../images/parallax/1.jpg) no-repeat center center fixed;
+  background: url(../images/parallax/4.jpg) no-repeat center center fixed;
   background-size: cover;
+}
+
+#garallax_4 {
+  background: url(../images/parallax/5.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.top-icons {
+  position: fixed;
+  top: 8px;
+  right: 16px;
+  z-index: 1021;
+}
+
+.top-icon {
+  padding-left: 4px;
 }
 
 .jumbotron {
   margin-bottom: 0rem;
-  text-align: right;
+  text-align: left;
   height: 100vh;
   background: url('/images/parallax/1.jpg') center center;
   background-size: cover;
   background-color: var(--accent-color);
-  color: var(--main-color-light);
-  box-shadow: inset -4px -8px 16px 4px rgba(175, 127, 78, 0.4);
-
+  color: #FFFFFF;
+  /*box-shadow: inset -4px -8px 16px 4px rgba(175, 127, 78, 0.4);*/
+  box-shadow: inset -4px -8px 16px 4px rgba(0, 0, 0, 0.5), 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.jumbotron .jumbotron--name {
-  font-family: 'Rancho', cursive;
-  font-size: 3em;
+.jumbotron .jumbotron-name {
+  font-family: 'Uncial Antiqua', sans-serif;
+  font-size: 2.5em;
+  text-shadow: 0 2px 4px var(--nav);
+  position: absolute;
+  top: 16px;
+  left: 16px;
 }
 
 .jumbo-contact-img {
   max-height: 40px;
 }
 
+.sexy-line{ 
+  display:block;
+  border:none;
+  color:white;
+  height:1px;
+  background:black;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(#2E0208));
+  width: 100%;
+}
+
+.lead {
+  margin-top: 1em;
+  font-size: 0.8em;
+  position: absolute;
+  top: 8px;
+  left: 32px;
+}
+
 .navbar {
-  background-color: var(--gray-light);
+  background-color: var(--nav);
 }
 
 .navbar-brand {
@@ -113,22 +156,45 @@ body {
 
 
 .nav-link:hover {
-  color: var(--main-color);
+  color: var(--main-color-dark);
 }
 
 .navbar-toggler-icon {
   color: #FFFFFF;
 }
 
-.cal {
-  padding: 1em 0;
-
-  background-color: var(--gray-light);
-  box-shadow: inset -4px -8px 16px 4px rgba(175, 127, 78, 0.4);
+.about {
+  background-color: var(--about);
+  color: #FFFFFF;
 }
 
-.calendar-title {
-  color: var(--main-color);
+.about-overlay {
+  padding: 2em 0;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,1+48,0+100 */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(73,37,19,0) 50%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(73,37,19,0) 50%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(73,37,19,0) 50%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.cal {
+  background-color: var(--calendar);
+}
+
+.cal-overlay {
+  padding: 2em 0;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,1+48,0+100 */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(54,24,8,0) 50%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(54,24,8,0) 50%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(54,24,8,0) 50%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.section-title {
+  color: #FFFFFF;
+  font-weight: 300;
 }
 
 .bookings-link { color: #FFFFFF; }
@@ -137,26 +203,27 @@ body {
   text-shadow: 0 1px 2px var(--main-color);
 }
 
-.gallery {
+.gallery-page {
+  background-color: var(--gallery);
+}
+
+.gallery-overlay {
   padding: 2em 0;
-  background-color: var(--gray-light);
-  box-shadow: inset -4px -8px 16px 4px rgba(175, 127, 78, 0.4);
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,1+48,0+100 */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(25,11,8,0) 50%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(25,11,8,0) 50%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(25,11,8,0) 50%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
-.gallery-image {
-  margin-bottom: 1em;
-}
-
-.gallery-title {
-  color: var(--main-color);
-}
 
 .filter-button {
-  border: 1px solid var(--main-color);
+  border: 1px solid var(--main-color-dark);
   border-radius: 8px;
-  box-shadow: 1px 1px 4px var(--main-color);
+  box-shadow: 1px 1px 4px var(--main-color-dark);
   text-align: center;
-  color: var(--main-color);
+  color: var(--main-color-dark);
   margin-bottom: 1em;
 }
 
@@ -167,8 +234,7 @@ body {
 }
 
 .wearecentralpa {
-  background-color: var(--gray-dark);
-  box-shadow: inset -4px -8px 16px 4px rgba(175, 127, 78, 0.4);
+  background-color: var(--nav);
 }
 
 .wearecentralpa-row {
@@ -185,15 +251,23 @@ body {
 }
 
 .wearecentralpa-img {
-  max-width: 384px;
+  max-width: 320px;
   padding-bottom: 1em;
 }
 
 .footer {
   padding: 2em 0 4em 0;
-  background-color: var(--gray-light);
-  color: var(--main-color);
-  box-shadow: inset -4px -8px 16px 4px rgba(175, 127, 78, 0.4);
+  background-color: var(--footer);
+  color: #FFFFFF;
+  font-weight: 300;
+}
+
+.footer-hr { display: none; }
+
+.footer-name {
+  font-weight: 300;
+  margin-bottom: 0;
+  padding-top: 8px;
 }
 
 .footer-text-div {
@@ -207,6 +281,12 @@ body {
 
 .footer-icon-div {
   text-align: right;
+}
+
+.tail {
+  font-size: 0.8em;
+  color: #DDDDDD;
+  margin: 0 0 8px 0;
 }
 
 .icons-container {
@@ -231,8 +311,13 @@ body {
 }
 
 @media screen and (max-width: 415px) {
+  .top-icons { display: none; }
+  .footer-logo-badge { text-align: center; }
   .footer-text-div { text-align: center; }
-  .footer-icon-div {
-    text-align: center;
+  .footer-icon-div { text-align: center; }
+  .footer-hr {
+    display: block;
+    background-color: #FFFFFF;
   }
+  .footer-right { text-align: center; }
 }
