@@ -329,7 +329,18 @@ h6 { font-size: 1.0em; }
   .wearecentralpa-img { max-width: 200px; }
 }
 
+@media screen and (max-width: 641px) {
+  figure img {
+    max-width: 440px;
+  }
+  .popup {
+    top: 56px !important;
+    z-index: 100 !important;
+  }
+}
+
 @media screen and (max-width: 415px) {
+  figure img { max-width: 400px;  }
   .footer-logo-badge { text-align: center; }
   .footer-text-div { text-align: center; }
   .footer-icon-div { text-align: center; }
@@ -339,4 +350,8 @@ h6 { font-size: 1.0em; }
     background-color: #FFFFFF;
   }
   .footer-right { text-align: center; }
+}
+
+@media screen and (max-width: 360px) {
+  figure img { max-width: 320px;  }
 }
