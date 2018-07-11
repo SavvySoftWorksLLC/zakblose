@@ -15,15 +15,14 @@
 body {
   font-size: 1.1em;
   line-height: 1.4em;
-
-  h1 { font-size: 2.0em; }
-  h2 { font-size: 1.7411em; }
-  h3 { font-size: 1.5157em; }
-  h4 { font-size: 1.3195em; }
-  h5 { font-size: 1.1487em; }
-  h6 { font-size: 1.0em; }
-
 }
+
+h1 { font-size: 2.0em; }
+h2 { font-size: 1.7411em; }
+h3 { font-size: 1.5157em; }
+h4 { font-size: 1.3195em; }
+h5 { font-size: 1.1487em; }
+h6 { font-size: 1.0em; }
 
 #overlay{
   display: none;
@@ -56,27 +55,26 @@ body {
 .garallax {
   height: 72vh !important;
   width: 100%;
-  /*box-shadow: inset -4px -8px 16px 4px rgba(175, 127, 78, 0.4), 4px 4px 8px rgba(175, 127, 78, 0.4);*/
   box-shadow: inset -4px -8px 16px 4px rgba(0,0,0, 0.3), 4px 4px 8px rgba(0,0,0, 0.3);
 }
 
 #garallax_1 {
-  background: url(../images/parallax/3.jpg) no-repeat center center fixed;
+  background: url(../images/parallax/3b.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
 #garallax_2 {
-  background: url(../images/parallax/2.jpg) no-repeat center center fixed;
+  background: url(../images/parallax/2b.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
 #garallax_3 {
-  background: url(../images/parallax/4.jpg) no-repeat center center fixed;
+  background: url(../images/parallax/4b.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
 #garallax_4 {
-  background: url(../images/parallax/5.jpg) no-repeat center center fixed;
+  background: url(../images/parallax/5b.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -95,11 +93,10 @@ body {
   margin-bottom: 0rem;
   text-align: left;
   height: 100vh;
-  background: url('/images/parallax/1.jpg') center center;
+  background: url('/images/parallax/1b.jpg') center center;
   background-size: cover;
   background-color: var(--accent-color);
   color: #FFFFFF;
-  /*box-shadow: inset -4px -8px 16px 4px rgba(175, 127, 78, 0.4);*/
   box-shadow: inset -4px -8px 16px 4px rgba(0, 0, 0, 0.5), 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -139,6 +136,7 @@ body {
 }
 
 .navbar-brand {
+  font-family: 'Uncial Antiqua', sans-serif;
   color: #FFFFFF;
 }
 
@@ -154,7 +152,6 @@ body {
   border-right: 1px solid #FFFFFF;
 }
 
-
 .nav-link:hover {
   color: var(--main-color-dark);
 }
@@ -163,9 +160,19 @@ body {
   color: #FFFFFF;
 }
 
+.sm-nav-item {
+  display: none;
+  padding-bottom: 1em;
+}
+
+.sm-nav-item-hr {
+  background-color: #FFFFFF;
+}
+
 .about {
+  font-weight: 300;
   background-color: var(--about);
-  color: #FFFFFF;
+  color: var(--gray-light);
 }
 
 .about-overlay {
@@ -283,6 +290,10 @@ body {
   text-align: right;
 }
 
+.footer-right {
+  text-align: right;
+}
+
 .tail {
   font-size: 0.8em;
   color: #DDDDDD;
@@ -310,11 +321,19 @@ body {
   transform: rotate(360deg);
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 769px) {
   .top-icons { display: none; }
+  .sm-nav-item {
+    display: block;
+  }
+  .wearecentralpa-img { max-width: 200px; }
+}
+
+@media screen and (max-width: 415px) {
   .footer-logo-badge { text-align: center; }
   .footer-text-div { text-align: center; }
   .footer-icon-div { text-align: center; }
+  .footer-right { text-align: center; }
   .footer-hr {
     display: block;
     background-color: #FFFFFF;

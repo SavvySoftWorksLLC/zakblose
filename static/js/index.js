@@ -12,22 +12,12 @@ $(function() {
     }
   })
 
-  // jumbotron icons
-  // on load
-  $(".icons-calendar").show()
-  $(".icons-return").hide()
-  $(".icons-gallery").show()
-
   // on scroll
   $(document).scroll(function () {
     if ($(window).scrollTop() >= 24) {
-      $(".icons-calendar").fadeOut(1000)
       $(".icons-return").fadeIn(2000)
-      $(".icons-gallery").fadeOut(1000)
     } else {
-      $(".icons-calendar").fadeIn(2000)
       $(".icons-return").fadeOut(1000)
-      $(".icons-gallery").fadeIn(2000)
     }
   })
 
