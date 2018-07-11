@@ -59,22 +59,22 @@ h6 { font-size: 1.0em; }
 }
 
 #garallax_1 {
-  background: url(../images/parallax/3b.jpg) no-repeat center center fixed;
+  background: url(../images/parallax/3b.jpg) center center;
   background-size: cover;
 }
 
 #garallax_2 {
-  background: url(../images/parallax/2b.jpg) no-repeat center center fixed;
+  background: url(../images/parallax/2b.jpg) center center;
   background-size: cover;
 }
 
 #garallax_3 {
-  background: url(../images/parallax/4b.jpg) no-repeat center center fixed;
+  background: url(../images/parallax/4b.jpg) center center;
   background-size: cover;
 }
 
 #garallax_4 {
-  background: url(../images/parallax/5b.jpg) no-repeat center center fixed;
+  background: url(../images/parallax/5b.jpg) center center;
   background-size: cover;
 }
 
@@ -93,7 +93,7 @@ h6 { font-size: 1.0em; }
   margin-bottom: 0rem;
   text-align: left;
   height: 100vh;
-  background: url('/images/parallax/1b.jpg') center center;
+  background: url('../images/parallax/1b.jpg') center center;
   background-size: cover;
   background-color: var(--accent-color);
   color: #FFFFFF;
