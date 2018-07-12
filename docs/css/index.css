@@ -59,23 +59,107 @@ h6 { font-size: 1.0em; }
 }
 
 #garallax_1 {
-  background: url(../images/parallax/3b.jpg) center center;
+  background: url(../images/parallax/3b.jpg) center center fixed;
   background-size: cover;
+}
+
+@media screen and (max-width: 1025px) {
+  #garallax_1 {
+    background: url(../images/parallax/3b_1024.jpg) center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #garallax_1 {
+    background: url(../images/parallax/3b_768.jpg) center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #garallax_1 {
+    background: url(../images/parallax/3b_414.jpg) center center;
+    background-size: cover;
+  }
 }
 
 #garallax_2 {
-  background: url(../images/parallax/2b.jpg) center center;
+  background: url(../images/parallax/2b.jpg) center center fixed;
   background-size: cover;
+}
+
+@media screen and (max-width: 1025px) {
+  #garallax_2 {
+    background: url(../images/parallax/2b_1024.jpg) center center ;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #garallax_2 {
+    background: url(../images/parallax/2b_768.jpg) center center ;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #garallax_2 {
+    background: url(../images/parallax/2b_414.jpg) center center ;
+    background-size: cover;
+  }
 }
 
 #garallax_3 {
-  background: url(../images/parallax/4b.jpg) center center;
+  background: url(../images/parallax/4b.jpg) center center fixed;
   background-size: cover;
 }
 
+@media screen and (max-width: 1025px) {
+  #garallax_3 {
+    background: url(../images/parallax/4b_1024.jpg) center center ;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #garallax_3 {
+    background: url(../images/parallax/4b_768.jpg) center center ;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #garallax_3 {
+    background: url(../images/parallax/4b_414.jpg) center center ;
+    background-size: cover;
+  }
+}
+
 #garallax_4 {
-  background: url(../images/parallax/5b.jpg) center center;
+  background: url(../images/parallax/5b.jpg) center center fixed;
   background-size: cover;
+}
+
+@media screen and (max-width: 1025px) {
+  #garallax_4 {
+    background: url(../images/parallax/5b_1024.jpg) center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #garallax_4 {
+    background: url(../images/parallax/5b_768.jpg) center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #garallax_4 {
+    background: url(../images/parallax/5b_414.jpg) center center;
+    background-size: cover;
+  }
 }
 
 .top-icons {
@@ -332,6 +416,16 @@ h6 { font-size: 1.0em; }
 @media screen and (max-width: 641px) {
   figure img {
     max-width: 440px;
+  }
+  .popup {
+    top: 56px !important;
+    z-index: 100 !important;
+  }
+}
+
+@media screen and (max-width: 737px) {
+  figure img {
+    max-width: 480px;
   }
   .popup {
     top: 56px !important;
