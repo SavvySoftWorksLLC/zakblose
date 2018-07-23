@@ -2,8 +2,6 @@ $(function() {
   // jQuery Scroll Animations
   $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'))
-    console.log(target)
-    console.log(target.length)
     if(target.length) {
         event.preventDefault();
         $('html, body').animate({
@@ -34,14 +32,33 @@ $(function() {
 
   // gallery
   $(".filter-button").click(function(){
-    var value = $(this).attr('data-filter');
+    var value = $(this).attr('data-filter')
 
     if(value == "all") {
       $('.filter').show('1000');
     } else {
-      $(".filter").not('.'+value).hide('2000');
+      $(".filter").not('.'+value).hide('2000')
       $('.filter').filter('.'+value).show('2000')
     }
   })
-})
 
+  var apiKey = "AIzaSyCB-BMi0mdTfhxu44CcJgMNBOko7oPXnuE"
+  var calendarId = "3ukgvunfu2aapkha9i26u9tchc@group.calendar.google.com"
+  $('#calendar').fullCalendar({
+      googleCalendarApiKey: apiKey,
+      timezone: 'New York',
+      events: {
+          googleCalendarId: calendarId
+      },
+      eventRender: function(event, element) {
+        element.qtip({
+          content: event.title,
+          style: 'qtip-bootstrap',
+          position: {
+            my: 'bottom center',
+            at: 'top left'
+          }
+      })
+    }
+  })
+})

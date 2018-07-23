@@ -26,10 +26,19 @@
 <link rel="stylesheet" href="css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/index.css" />
 <link rel="stylesheet" href="css/gallery.css" />
+<link rel="stylesheet" href="css/jquery.qtip.min.css" />
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type='text/javascript' src='js/jquery.qtip.min.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+<script src="js/moment.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
+<script type='text/javascript' src='js/gcal.js'></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" />
 
 <script src="js/bootstrap.min.js"></script>
 <script src="js/index.js"></script>
@@ -45,11 +54,13 @@
 
 
   <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="jumbotron-name">ZAK BLOSE
-    <span class="sexy-line"></span>
-    <p></p>
-    </h1>
+  <div class="jumbotron-overlay">
+    <div class="container">
+      <h1 class="jumbotron-name">ZAK BLOSE
+      <span class="sexy-line"></span>
+      <p></p>
+      </h1>
+    </div>
   </div>
 </div>
 
@@ -64,7 +75,7 @@
         <a class="nav-link" href="#about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#calendar">Calendar</a>
+        <a class="nav-link" href="#calendar-section">Calendar</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#gallery">Gallery</a>
@@ -104,15 +115,10 @@
   <div id="garallax_2" class="garallax"></div>
 
 
-  <div id="calendar" class="cal">
+  <div id="calendar-section" class="cal">
   <div class="cal-overlay">
     <div class="container">
-      <div class="row">
-        <div class="col s12">
-          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=paul.scarrone%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FNew_York" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-        </div>
-      </div>
-    </div>
+      <div id="calendar"></div>
     <div class="bookings text-center">
       <a class="bookings-link" href="mailto:wzblose@gmail.com">Bookings: wzblose@gmail.com</a>
     </div>
@@ -127,22 +133,22 @@
   <div class="gallery-overlay">
     <div class="gallery">
       <figure>
-        <img src="images/gallery/g1.jpg" alt="" />
+        <img src="images/gallery/g1.jpg" alt="Zak Blose, Photo Credit: Savannah Butler" />
       </figure>
       <figure>
-        <img src="images/gallery/g2.jpg" alt="" />
+        <img src="images/gallery/g2.jpg" alt="Zak Blose, Photo Credit: Savannah Butler" />
       </figure>
       <figure>
-        <img src="images/gallery/g3.jpg" alt="" />
+        <img src="images/gallery/g3.jpg" alt="Zak Blose, Photo Credit: Savannah Butler" />
       </figure>
       <figure>
-        <img src="images/gallery/g4.jpg" alt="" />
+        <img src="images/gallery/g4.jpg" alt="Zak Blose, Photo Credit: Savannah Butler" />
       </figure>
       <figure>
-        <img src="images/gallery/g5.jpg" alt="" />
+        <img src="images/gallery/g5.jpg" alt="Zak Blose, Photo Credit: Savannah Butler" />
       </figure>
       <figure>
-        <img src="images/gallery/g6.jpg" alt="" />
+        <img src="images/gallery/g6.jpg" alt="Zak Blose, Photo Credit: Savannah Butler" />
       </figure>
     </div>
   </div>
@@ -243,9 +249,7 @@
             <a class="footer-icon" href="https://www.facebook.com/ZakBlose/" target="_blank">
               <img class="img-responsive" src="images/F_icon.svg" alt="Zak Blose on Facebook" height="32"/>
             </a>
-            <a class="footer-icon" href="https://www.spotify.com/" target="_blank">
-              <img class="img-responsive" src="images/Spotify_logo_without_text.svg" alt="Zak Blose on Spotify" height="32"/>
-            </a>
+
         </div>
       </div>
 
@@ -272,14 +276,23 @@
   </div>
 </div>
 
+<div class="footer-credits-row">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <p>Photo credit: Savannah Butler / <a class="footer-credit-href" href="savvyshots.photography" target="_blank">Savvy Shots Photography</a></p>
+        <p>Website: Gary A. Newsome / <a class="footer-credit-href" href="savvysoftworks.com" target="_blank">SavvySoftWorks</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <div class="top-icons">
   <a class="top-icon" href="https://www.facebook.com/ZakBlose/" target="_blank">
     <img class="img-responsive" src="images/F_icon.svg" alt="Zak Blose on Facebook" height="32"/>
   </a>
-  <a class="top-icon" href="https://www.spotify.com/" target="_blank">
-    <img class="img-responsive" src="images/Spotify_logo_without_text.svg" alt="Zak Blose on Spotify" height="32"/>
- </a>
+
 </div>
 
 <div class="icons-container">
